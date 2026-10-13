@@ -1,0 +1,4 @@
+# Satu nama perusahaan per baris (contoh fiktif)
+PT. CONTOH MAJU SEJAHTERA
+PT. SAMPLE DIGITAL INDONESIA
+PT. DEMO PROPERTY GROUP
