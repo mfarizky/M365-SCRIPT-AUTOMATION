@@ -16,6 +16,9 @@ $Config = @{
     TemplatePortalUrl   = "https://contoso.sharepoint.com/sites/template-portal" # portal klien yang jadi sumber template
     ExcludedSiteUrl     = "https://contoso.sharepoint.com/sites/excluded"       # site yang dikecualikan dari mass update
     InternalTitleKeyword = "CONTOSO"                                            # kata kunci judul site internal (di-skip)
+    InternalSiteAlias    = "hub"              # alias URL site internal (di-skip)
+    InternalWikiAlias    = "wiki"             # alias URL wiki internal (di-skip)
+    TemplatePortalAlias  = "template-portal"  # alias URL portal template
 
     # --- Entra ID App Registration ---
     AppClientId         = "00000000-0000-0000-0000-000000000000"  # app-only (sertifikat)

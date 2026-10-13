@@ -42,10 +42,10 @@ $filteredSites = $allSites | Where-Object {
         $url -notlike "*content*" -and
         $url -notlike "*app*" -and
         $url -notlike "*VivaHome*" -and
-        $url -notlike "*gki*" -and
-        $url -notlike "*ganawiki*" -and
+        $url -notlike "*$($Config.InternalSiteAlias)*" -and
+        $url -notlike "*$($Config.InternalWikiAlias)*" -and
         $url -notlike "*portal*" -and
-        $title -notlike "*GKI*" -and
+        $title -notlike "*$($Config.InternalSiteAlias)*" -and
         $title -notlike "*PORTAL*" -and
         $title -notlike "*FILL GAPS SITE*" -and
         $title -notlike "*Communication*" -and

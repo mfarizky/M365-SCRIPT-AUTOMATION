@@ -16,11 +16,11 @@ $filteredSites = $allSites.ResultRows | Where-Object {
     $url = $_["Path"].ToLower()
     $title = $_["Title"].ToLower()
     -not ($url -like "*content*") -and -not ($url -like "*app*") -and
-    -not ($url -like "*vivahome*") -and -not ($title -like "*gki*") -and
-    -not ($title -like "*portal*") -and -not ($url -like "*gki*") -and
-    -not ($url -like "*ganawiki*") -and -not ($url -like "*portal*") -and
+    -not ($url -like "*vivahome*") -and -not ($title -like "*$($Config.InternalSiteAlias)*") -and
+    -not ($title -like "*portal*") -and -not ($url -like "*$($Config.InternalSiteAlias)*") -and
+    -not ($url -like "*$($Config.InternalWikiAlias)*") -and -not ($url -like "*portal*") -and
     -not ($title -like "*fill gaps site*") -and -not ($title -like "*communication*") -and
-    -not ($title -like "*gana*")
+    -not ($title -like "*$($Config.InternalTitleKeyword)*")
 }
 
 $userEmail = (Get-PnPContext).Web.CurrentUser.Email

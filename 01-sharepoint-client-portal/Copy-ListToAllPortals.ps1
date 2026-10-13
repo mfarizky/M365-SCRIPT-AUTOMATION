@@ -20,7 +20,7 @@ Where-Object {
 
     $_.Url.StartsWith($baseUrl) -and
     $siteName.Length -le 4 -and
-    $siteName -ne "ncp" -and
+    $siteName -ne $Config.TemplatePortalAlias -and
     $validTemplates -contains $_.Template
 } |
 Select-Object -ExpandProperty Url

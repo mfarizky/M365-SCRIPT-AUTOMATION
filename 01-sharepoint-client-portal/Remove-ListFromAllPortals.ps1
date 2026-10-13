@@ -14,7 +14,7 @@ $sourceSiteURL = $Config.TemplatePortalUrl
 $listNameToDelete = "REGULATORY COMPLIANCE"
 
 # SITE YANG DIKECUALIKAN
-$excludedSites = @("ncp","gki")
+$excludedSites = @($Config.TemplatePortalAlias, $Config.InternalSiteAlias)
 
 # ==============================
 # CONNECT KE SOURCE

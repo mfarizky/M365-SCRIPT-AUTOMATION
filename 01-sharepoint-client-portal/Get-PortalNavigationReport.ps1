@@ -28,7 +28,7 @@ Connect-PnPOnline -Url $adminSiteUrl -ClientId $clientId -Tenant $tenant -Certif
 $allSites = Get-PnPTenantSite
 $filteredSites = $allSites | Where-Object {
     $url = $_.Url; $title = $_.Title
-    ($url -like "*/sites/*" -and $url -notlike "*content*" -and $url -notlike "*app*" -and $url -notlike "*VivaHome*" -and $url -notlike "*gki*" -and $url -notlike "*ganawiki*" -and $url -notlike "*portal*" -and $title -notlike "*GKI*" -and $title -notlike "*PORTAL*" -and $title -notlike "*FILL GAPS SITE*" -and $title -notlike "*Communication*" -and $title -notlike "*$($Config.InternalTitleKeyword)*" -and $title -notlike "*RedirectSite*")
+    ($url -like "*/sites/*" -and $url -notlike "*content*" -and $url -notlike "*app*" -and $url -notlike "*VivaHome*" -and $url -notlike "*$($Config.InternalSiteAlias)*" -and $url -notlike "*$($Config.InternalWikiAlias)*" -and $url -notlike "*portal*" -and $title -notlike "*$($Config.InternalSiteAlias)*" -and $title -notlike "*PORTAL*" -and $title -notlike "*FILL GAPS SITE*" -and $title -notlike "*Communication*" -and $title -notlike "*$($Config.InternalTitleKeyword)*" -and $title -notlike "*RedirectSite*")
 }
 $targetSites = $filteredSites.Url
 Disconnect-PnPOnline

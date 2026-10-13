@@ -14,11 +14,11 @@ $outputPath     = (Join-Path $Config.ReportFolder "Internal_Sites_FileSize_Summa
 
 # Daftar 5 Site Internal yang ingin diperiksa saja
 $targetSites = @(
-    @{ Name = "GKI LEGAL";       UrlPath = "/sites/legal" },
-    @{ Name = "GKI SERVICES";    UrlPath = "/sites/services" }, # Mengcover /sites/service atau /sites/services
-    @{ Name = "GKI FINANCE";     UrlPath = "/sites/finance" },
-    @{ Name = "GKI DIGIHUB";      UrlPath = "/sites/digihub" },
-    @{ Name = "GKI REAL ESTATE"; UrlPath = "/sites/real" } # Mengcover /sites/realestate atau /sites/real-estate
+    @{ Name = "LEGAL"; UrlPath = "/sites/legal" },
+    @{ Name = "SERVICES"; UrlPath = "/sites/services" }, # Mengcover /sites/service atau /sites/services
+    @{ Name = "FINANCE"; UrlPath = "/sites/finance" },
+    @{ Name = "DIGIHUB"; UrlPath = "/sites/digihub" },
+    @{ Name = "REAL ESTATE"; UrlPath = "/sites/real" } # Mengcover /sites/realestate atau /sites/real-estate
 )
 
 # ==========================================

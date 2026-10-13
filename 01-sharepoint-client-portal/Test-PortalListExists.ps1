@@ -14,7 +14,7 @@ $sourceSiteURL = $Config.TemplatePortalUrl
 $listNameToCheck = "REGULATORY COMPLIANCE"
 
 # SITE YANG DIKECUALIKAN
-$excludedSites = @("ncp","gki")
+$excludedSites = @($Config.TemplatePortalAlias, $Config.InternalSiteAlias)
 
 # RESULT STORAGE
 $results = @()

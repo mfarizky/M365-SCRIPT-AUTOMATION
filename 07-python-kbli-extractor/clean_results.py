@@ -11,7 +11,7 @@ def clean_pt_name(name):
     name = str(name).strip()
     
     # Hapus prefix/awalan yang tidak diperlukan
-    prefix_patt = r"^(AKTA\s+PENDIRIAN\s+PERSEROAN\s+TERBATAS|AKTA\s+PENDIRIANN|AKTA\s+PENDIRIAN|PENDIRIAN|GKI-AP\[-|GKI-AP\[|4\.\s*AKTA\s+PENDIRIAN)\s*"
+    prefix_patt = r"^(AKTA\s+PENDIRIAN\s+PERSEROAN\s+TERBATAS|AKTA\s+PENDIRIANN|AKTA\s+PENDIRIAN|PENDIRIAN|[A-Z]{2,5}-AP\[-|[A-Z]{2,5}-AP\[|4\.\s*AKTA\s+PENDIRIAN)\s*"
     name = re.sub(prefix_patt, "", name, flags=re.IGNORECASE)
     
     # Bersihkan tanda kurung atau bracket di ujung teks
